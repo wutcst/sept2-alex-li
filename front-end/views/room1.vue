@@ -9,9 +9,6 @@
             <!-- <img class="xia" src="../assets/xia.png" alt="" @click="toSouth"> -->
             <!-- <img class="zuo" src="../assets/zuo.png" alt="" @click="toWest"> -->
             <img class="you" src="../assets/you.png" alt="" @click="toEast">
-            <!-- <div class="monster">
-                <img src="../assets/monster2.png" alt="">
-            </div> -->
             <div class="monster">
                 <div v-for="(item, index) in monster">
                     <el-popover placement="top-start" title="怪兽信息" trigger="hover" width="200">
@@ -28,8 +25,6 @@
                 </div>
             </div>
 
-
-            <!-- <div class="title">巨洞冒险游戏</div> -->
             <div class="options">
                 <div class="buttons" @click="getPlayerItem"> <img src="http://1.13.173.161:8080/images/quest_icon_02.png"
                         mode="heightFix" alt=""> <v-text>个人背包</v-text></div>
@@ -153,10 +148,6 @@ export default {
             this.axios.put("player/update", player).then(res => {
                 console.log(res)
             })
-            // this.axios.get("article/uid=" + this.uid).then(res => {
-            //     console.log(res)
-            //     this.tableData = res.data.data
-            // })
         },
         getPlayerItem() {
             this.axios.get("player").then(res => {
