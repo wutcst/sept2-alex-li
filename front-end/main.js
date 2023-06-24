@@ -12,11 +12,11 @@ import echarts from 'echarts'
 Vue.config.productionTip = false
 Vue.use(ElementUI)
 Vue.use(VueAxios, axios)
-Vue.prototype.$echarts = echarts
+// Vue.prototype.$echarts = echarts
 
 
 // axios.defaults.baseURL = 'http://1.13.173.161:9090/'
-axios.defaults.baseURL = 'http://localhost:9091/'
+axios.defaults.baseURL = 'http://1.13.173.161:9091/'
 // Vue.use(VueRouter)
 /* eslint-disable no-new */
 new Vue({
