@@ -35,14 +35,6 @@ export default {
 		}
 	},
 	methods: {
-		// newGame() {
-		// 	this.$router.push({
-		//         path: '/room1',
-		//         query: {
-		//             currentRoomId: 1
-		//         }
-		//     })
-		// },
 		newGame() {
 			let player = {
 				"id": 1,
